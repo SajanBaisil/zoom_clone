@@ -66,6 +66,10 @@ class _HomePageState extends State<HomePage> {
       ),
       body: CarouselSlider(
         options: CarouselOptions(
+          autoPlay: true,
+          enableInfiniteScroll: true,
+          autoPlayCurve: Curves.easeInCubic,
+          autoPlayAnimationDuration: Duration(milliseconds: 1000),
             viewportFraction: 0.99,
             height: size.height,
             onPageChanged: (int index, reason) {
